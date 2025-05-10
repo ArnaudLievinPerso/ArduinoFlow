@@ -4,6 +4,8 @@ Liquid flow rate sensor
 Modified from -DIYhacking.com Arvind Sanjeev
 with https://www.arduino.cc/reference/cs/language/functions/external-interrupts/attachinterrupt/ for XIAO MKR.
 
+Modified 2025-05-10 to go to Seeed Studio XIAO nRF52840 Sense
+
 
  */
 
@@ -12,6 +14,9 @@ with https://www.arduino.cc/reference/cs/language/functions/external-interrupts/
 #include <Adafruit_NeoMatrix.h>
 #include <Adafruit_NeoPixel.h>
 #include <Fonts/Picopixel.h>
+// Added this row from the Seeed studio web site https://wiki.seeedstudio.com/XIAO_BLE/
+#include <Adafruit_TinyUSB.h>
+
 
 #ifndef PSTR
  #define PSTR // Make Arduino Due happy
